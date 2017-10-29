@@ -1,12 +1,30 @@
 // JavaScript Document
-var plane_size = 16;
+var plane_size = initialize();
 var plane = document.getElementById("plane");//tbody
 var turn = 1;
 var won = false;
 make_plane();
 var chess = document.getElementsByClassName("chess");
-
 setInterval(update,1);
+
+
+function initialize() {
+  while (true) {
+    var pre = prompt("请设置你的棋盘大小：\n（16到32（包含）的数字）");
+    var patt = /\d/
+    for (var i = 0; i < pre.length ; i++){
+      if (!pre[i].match(patt)) {break;}
+      if(i == pre.length-1 ){
+        pre = parseInt(pre);
+        if (pre<16||pre>32) {break;}
+        return pre;
+      }
+    }
+    alert("请输入正确的值！")
+  }
+
+
+}
 
 function update() {
 
