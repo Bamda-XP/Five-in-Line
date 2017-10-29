@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	width:auto;
+	height:auto;
+	background-color: rgba(232,133,135,1.00);
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 1s;
+
+}
+#title{
+	font-family: 华文行楷;
+	text-align: center;
+}
+.point{
+	width:1em;
+	height:1em;
+	background-color:rgba(38,183,27,1.00);
+	box-shadow: 2px 2px 5px #888888 inset;
+	border: solid 1px;
+	transition: all 0.3s;
+}
+.point:hover{
+	background-color:rgba(120,255,120,1.0);
+}
+#plane{
+	margin-left: auto;
+	margin-right: auto;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 20px #888888;
+}
+.chess{
+	width:inherit;
+	height: inherit;
+	border-radius: 0em;
+	background-color: brown;
+	opacity: 0;
+	transition: all 0.3s;
+	border: groove;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+p{
+	font-family: 华文新魏;
+	color: rgb(228, 228, 228);
+	font-size: 32px;
+	padding: 8px;
+	box-shadow: 10px 10px 20px #888888;
+	text-shadow: 2px 2px 5px #888888;
+	width: 4em;
+	text-align: center;
+}
+#turn{
+	background-color: rgb(77, 189, 175);
+	float: left;
+}
+#player{
+	background-color: rgb(118, 15, 156);
+	float:right;
+}
+
+#reset{
+	background-color: rgb(238, 150, 79);
+	float:left;
+	margin-left: 1em;
+	transition: all 0.3s;
+}
+#reset:hover{
+	background-color: rgb(218, 101, 24);
+	cursor: pointer;
+}
+#surrender{
+	background-color: rgb(100, 100, 100);
+	float: right;
+	margin-right: 1em;
+	transition: all 0.3s;
+}
+#surrender:hover{
+	background-color: rgb(52, 52, 52);
+	cursor: pointer;
+}
+#ann{
+	margin-left: auto;
+	margin-right: auto;
+	width:8em;
+	transition: all 1s;
+	opacity: 0;
+}
