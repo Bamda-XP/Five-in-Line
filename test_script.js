@@ -5,7 +5,7 @@ var turn = 1;
 var won = false;
 make_plane();
 var chess = document.getElementsByClassName("chess");
-setInterval(update,1);
+setInterval(update,100);
 
 
 function initialize() {
@@ -144,18 +144,6 @@ function win(player) {
   }
   $("#ann").html(txt);
   alert(txt);
-}
-
-function get_chess(x,y){
-	"use strict";
-	var chess = document.getElementsByClassName("chess");
-	var a
-	for (a in chess){
-    if (chess[i].style == undefined) {continue;}
-		if (chess[a].x!==x||chess[a].y!==y){continue;}
-
-		return chess[a];
-	}
 }
 
 function get_player(){
