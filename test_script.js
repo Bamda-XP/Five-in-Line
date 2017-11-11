@@ -148,9 +148,7 @@ function win(player) {
 
 function get_player(){
 	"use strict";
-	if(turn%2 === 0){
-		return 0;
-	}else{return 1;}
+	return turn%2;
 
 }
 //0蓝，1红

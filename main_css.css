@@ -45,6 +45,10 @@ table{
 	cursor: pointer;
 }
 
+.chess:hover{
+	opacity:1.0;
+	
+}
 p{
 	font-family: 华文新魏;
 	color: rgb(228, 228, 228);
